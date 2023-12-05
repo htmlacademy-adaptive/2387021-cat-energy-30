@@ -44,16 +44,16 @@
         <div class="program__wrapper">
           <h1 class="program__title main-title">Подбор программы</h1>
           <p class="program__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="program__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__field">
               <legend class="visually-hidden">Информация о питомце.</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__label label" for="cat-name">ИМЯ:*</label>
+                  <label class="form__label label" for="cat-name">ИМЯ:<abbr title="Обязательно к заполнению.">*</abbr></label>
                   <input class="form__input form-control input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
                 </li>
                 <li class="form__item">
-                  <label class="form__label label" for="cat-weight">Вес (кг):*</label>
+                  <label class="form__label label" for="cat-weight">Вес (кг):<abbr title="Обязательно к заполнению.">*</abbr></label>
                   <input class="form__input form-control input" type="number" id="cat-weight" name="cat-weight" min="0" placeholder="7" required>
                 </li>
                 <li class="form__item">
@@ -92,11 +92,11 @@
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__label label" for="email">E-mail:*</label>
+                  <label class="form__label label" for="email">E-mail:<abbr title="Обязательно к заполнению.">*</abbr></label>
                   <input class="form__input form-control input" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
                 </li>
                 <li class="form__item">
-                  <label class="form__label label" for="tel">Телефон:*</label>
+                  <label class="form__label label" for="tel">Телефон:<abbr title="Обязательно к заполнению.">*</abbr></label>
                   <input class="form__input form-control input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
