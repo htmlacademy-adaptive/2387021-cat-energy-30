@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
   <link rel="stylesheet" href="./styles/styles.css">
   <script src="./scripts/index.js" defer></script>
@@ -14,8 +18,12 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="#">
-        <img class="logo__image logo__image--icon" src="./images/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
-        <img class="logo__image logo__image--text" src="./images/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/icons/logo-desc.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/icons/logo-tab.svg">
+          <img class="logo__image logo__image--icon" src="./images/icons/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="33" height="38">
+        </picture>
+        <img class="logo__image logo__image--text" src="./images/icons/logo-header-text.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list nav-list">
@@ -47,7 +55,11 @@
       <div class="hero__wrapper">
         <h1 class="hero__title main-title main-title--secondary">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="./images/hero-bg-mob.png" alt="Изображение 'Cat Energy' со вкусом курицы." width="280" height="270">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/index/hero-bg-desc@1x.png 1x, ./images/index/hero-bg-desc@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/index/hero-bg-tab@1x.png 1x, ./images/index/hero-bg-tab@2x.png 2x">
+          <img class="hero__image" src="./images/index/hero-bg-mob@1x.png" srcset="./images/index/hero-bg-mob@2x.png 2x" alt="Изображение 'Cat Energy' со вкусом курицы." width="280" height="270">
+        </picture>
         <a class="hero__button button" href="./form.html">Подобрать программу</a>
         <ul class="hero__list option-list">
           <li class="option-list__item option-list__item--weight-loss">
@@ -101,10 +113,16 @@
           </button>
           <ul class="slider__list">
             <li class="slider__item">
-              <img class="slider__image slider__image--before" src="./images/fat-cat.png" width="280" height="256" alt="Изображение кота с излишним весом.">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/index/fat-cat-desc@1x.png 1x, ./images/index/fat-cat-desc@2x.png 2x">
+                <img class="slider__image slider__image--before" src="./images/index/fat-cat-mob@1x.png" srcset="./images/index/fat-cat-mob@2x.png 2x" width="280" height="256" alt="Изображение кота с излишним весом.">
+              </picture>
             </li>
             <li class="slider__item">
-              <img class="slider__image slider__image--after" src="./images/thin-cat.png" width="280" height="256" alt="Изображение стройного кота.">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/index/thin-cat-desc@1x.png 1x, ./images/index/thin-cat-desc@2x.png 2x">
+                <img class="slider__image slider__image--after" src="./images/index/thin-cat-mob@1x.png" srcset="./images/index/thin-cat-mob@2x.png 2x" width="280" height="256" alt="Изображение стройного кота.">
+              </picture>
             </li>
           </ul>
         </div>
@@ -119,11 +137,15 @@
         <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="main-footer__map map">
-        <img class="map__image" src="./images/map.jpg" alt="Карта с расположением магазина." width="320" height="362">
+        <!-- <img class="map__image" src="./images/map@1x.jpg" alt="Карта с расположением магазина." width="320" height="362"> -->
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6914c3ad82b2e3772bf3d945694e5ac666b5b3e833f3bae6b20eb8af6ff2f5c3&amp;source=constructor" width="320" height="362" frameborder="0"></iframe> -->
+        <div class="map__image">
+          <span class="visually-hidden">Карта местоположения магазина Cat Energy.</span>
+        </div>
       </div>
       <div class="main-footer__secondary-footer secondary-footer">
         <a class="secondary-footer__logo" href="#">
-          <img class="secondary-footer__image" src="./images/footer-logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="128" height="24">
+          <img class="secondary-footer__image" src="./images/icons/logo-footer.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="128" height="24">
         </a>
         <ul class="secondary-footer__social social">
           <li class="social__item social__item--vk">
@@ -167,6 +189,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b045ab3d-5d7b-46d9-85e2-ae3a5a8949ed&lang=ru_RU"></script>
+  <script src="./scripts/index-map.js"></script>
 </body>
 
 </html>

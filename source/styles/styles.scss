@@ -5,3 +5,12 @@
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
+.map__image {
+  max-width: 320px;
+  height: 362px;
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
