@@ -136,11 +136,14 @@
         <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="main-footer__map map">
-        <!-- <img class="map__image" src="./images/map@1x.jpg" alt="Карта с расположением магазина." width="320" height="362"> -->
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6914c3ad82b2e3772bf3d945694e5ac666b5b3e833f3bae6b20eb8af6ff2f5c3&amp;source=constructor" width="320" height="362" frameborder="0"></iframe> -->
-        <div class="map__image">
+        <!-- <div class="map__image">
           <span class="visually-hidden">Карта местоположения магазина Cat Energy.</span>
-        </div>
+        </div> -->
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desc@1x.png 1x, ./images/map-desc@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tab@1x.png 1x, ./images/map-tab@2x.png 2x">
+          <img class="map__image-reserve" src="./images/map-mob@1x.png" srcset="./images/map-mob@2x.png 2x" alt="Карта с расположением магазина." width="320" height="362">
+        </picture>
       </div>
       <div class="main-footer__secondary-footer secondary-footer">
         <a class="secondary-footer__logo" href="#">

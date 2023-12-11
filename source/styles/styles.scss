@@ -4,8 +4,9 @@
 @import "./global/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/main-header.scss";
 
+/* NORMALIZE */
 @import "./normalize.scss";
 
 .map__image {
