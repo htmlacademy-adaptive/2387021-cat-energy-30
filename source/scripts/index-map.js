@@ -1,5 +1,5 @@
 const center = [59.938700351854315, 30.323047397817493];
-
+let ymaps;
 function init() {
   const map = new ymaps.Map(document.querySelector('.map__image'), {
     center: center,
