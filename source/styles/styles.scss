@@ -6,14 +6,11 @@
 /* BLOCKS */
 @import "./blocks/main-header.scss";
 
-/* NORMALIZE */
-@import "./normalize.scss";
+// .map__image {
+//   max-width: 320px;
+//   height: 362px;
+// }
 
-.map__image {
-  max-width: 320px;
-  height: 362px;
-}
-
-[class*="copyrights-pane"] {
-  display: none;
-}
+// [class*="copyrights-pane"] {
+//   display: none;
+// }
