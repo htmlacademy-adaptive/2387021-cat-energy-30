@@ -1,3 +1,13 @@
 .main-nav {
 
+  &__list {
+    margin: 0;
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+  }
 }

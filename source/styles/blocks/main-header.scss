@@ -1,10 +1,16 @@
 .main-header {
+  font-family: $secondary-font;
+  color: $basic-dark;
+  min-height: 65px;
 
   &__wrapper {
-
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    padding: 0 20px;
   }
 
   &__logo{
-
+    display: block;
   }
 }
