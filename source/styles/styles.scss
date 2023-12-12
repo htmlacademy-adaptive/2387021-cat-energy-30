@@ -1,7 +1,56 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+/* HEADER */
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/nav-list.scss";
+
+/* INDEX */
+@import "./blocks/main-container.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main-title.scss";
+@import "./blocks/button.scss";
+@import "./blocks/option-list.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/plus-list.scss";
+@import "./blocks/example.scss";
+@import "./blocks/result-list.scss";
+@import "./blocks/slider.scss";
+
+/* FOOTER */
+@import "./blocks/main-footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/map.scss";
+@import "./blocks/secondary-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+
+/* FORM */
+@import "./blocks/program.scss";
+@import "./blocks/form.scss";
+@import "./blocks/label.scss";
+@import "./blocks/form-control.scss";
+@import "./blocks/input.scss";
+@import "./blocks/textarea.scss";
+
+/* CATALOG */
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/offer.scss";
+
+// .map__image {
+//   max-width: 320px;
+//   height: 362px;
+// }
+
+// [class*="copyrights-pane"] {
+//   display: none;
+// }
