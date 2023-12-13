@@ -1,3 +1,18 @@
 .button {
+  @include flex;
+  font-family: $secondary-font;
+  color: $basic-white;
+  background-color: $basic-green;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
 
+.button--secondary {
+  background-color: $basic-grey;
+  color: $text-color;
 }

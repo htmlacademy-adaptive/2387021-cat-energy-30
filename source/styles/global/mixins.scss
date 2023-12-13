@@ -4,13 +4,6 @@
   justify-content: $justify-content;
 }
 
-@mixin button-main() {
-  @include flex;
-  padding: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
 @mixin font-face($font-family, $font-weight, $font-style, $src) {
   @font-face {
     font-family: $font-family;

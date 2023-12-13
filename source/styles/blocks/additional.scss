@@ -1,3 +1,31 @@
 .additional {
 
 }
+
+.additional__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.additional__title {
+  color: $basic-dark;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__subtitle {
+  color: #222222;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional__desc,
+.additional__price {
+  line-height: 14px;
+}
