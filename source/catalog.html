@@ -43,6 +43,7 @@
             </li>
           </ul>
           <button class="main-nav__burger" type="button">
+            <span class="main-nav__burger-span"></span>
             <span class="visually-hidden">Открыть меню.</span>
           </button>
         </nav>
@@ -55,126 +56,182 @@
           <h1 class="catalog__title main-title">Каталог продукции</h1>
           <ul class="catalog__list">
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <picture>
                 <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-1-desc@1x.png 1x, ./images/catalog/catalog-1-desc@2x.png 2x">
                 <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-1-tab@1x.png 1x, ./images/catalog/catalog-1-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-1-mob@1x.png" srcset="./images/catalog/catalog-1-mob@2x.png 2x" width="68" height="86" alt="Изображение товара 'Cat Energy PRO' 500 грамм со вкусом курицы.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">500 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Курица</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">700 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">500 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Курица</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">700 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <picture>
                 <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-2-desc@1x.png 1x, ./images/catalog/catalog-2-desc@2x.png 2x">
                 <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-2-tab@1x.png 1x, ./images/catalog/catalog-2-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-2-mob@1x.png" srcset="./images/catalog/catalog-2-mob@2x.png 2x" width="84" height="100" alt="Изображение товара 'Cat Energy PRO' 1000 грамм со вкусом курицы.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">1000 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Курица</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">1000 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">1000 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Курица</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">1000 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <picture>
                 <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-3-desc@1x.png 1x, ./images/catalog/catalog-3-desc@2x.png 2x">
                 <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-3-tab@1x.png 1x, ./images/catalog/catalog-3-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-3-mob@1x.png" srcset="./images/catalog/catalog-3-mob@2x.png 2x" width="68" height="78" alt="Изображение товара 'Cat Energy PRO' 500 грамм со вкусом рыбы.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">500 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Рыба</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">700 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">500 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Рыба</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">700 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <picture>
                 <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-4-desc@1x.png 1x, ./images/catalog/catalog-4-desc@2x.png 2x">
                 <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-4-tab@1x.png 1x, ./images/catalog/catalog-4-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-4-mob@1x.png" srcset="./images/catalog/catalog-4-mob@2x.png 2x" width="84" height="100" alt="Изображение товара 'Cat Energy PRO' 1000 грамм со вкусом рыбы.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">1000 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Рыба</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">1000 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">1000 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Рыба</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">1000 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy SLIM 500 г</h3>
               <picture>
                 <source width="161" height="171" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-5-desc@1x.png 1x, ./images/catalog/catalog-5-desc@2x.png 2x">
                 <source width="161" height="171" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-5-tab@1x.png 1x, ./images/catalog/catalog-5-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-5-mob@1x.png" srcset="./images/catalog/catalog-5-mob@2x.png 2x" width="68" height="78" alt="Изображение товара 'Cat Energy SLIM' 500 грамм со вкусом гречки.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">500 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Гречка</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">400 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy SLIM 500 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">500 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Гречка</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">400 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
               <picture>
                 <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-6-desc@1x.png 1x, ./images/catalog/catalog-6-desc@2x.png 2x">
                 <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-6-tab@1x.png 1x, ./images/catalog/catalog-6-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-6-mob@1x.png" srcset="./images/catalog/catalog-6-mob@2x.png 2x" width="84" height="100" alt="Изображение товара 'Cat Energy SLIM' 1000 грамм со вкусом гречки.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">1000 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Гречка</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">700 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">1000 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Гречка</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">700 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card">
-              <h3 class="card__title">Cat Energy SLIM 500 г</h3>
               <picture>
                 <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog/catalog-7-desc@1x.png 1x, ./images/catalog/catalog-7-desc@2x.png 2x">
                 <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="./images/catalog/catalog-7-tab@1x.png 1x, ./images/catalog/catalog-7-tab@2x.png 2x">
                 <img class="card__image" src="./images/catalog/catalog-7-mob@1x.png" srcset="./images/catalog/catalog-7-mob@2x.png" width="72" height="84" alt="Изображение товара 'Cat Energy SLIM' 500 грамм со вкусом риса.">
               </picture>
-              <dl class="card__desc">
-                <dt class="card__desc-item">Масса</dt>
-                <dd class="card__desc-item">500 г</dd>
-                <dt class="card__desc-item">Вкус</dt>
-                <dd class="card__desc-item">Рис</dd>
-                <dt class="card__desc-item">Цена</dt>
-                <dd class="card__desc-item">500 ₽</dd>
-              </dl>
+              <div class="card__content">
+                <h3 class="card__title">Cat Energy SLIM 500 г</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <span class="card__item-term">Масса</span>
+                    <span class="card__item-desc">500 г</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Вкус</span>
+                    <span class="card__item-desc">Рис</span>
+                  </li>
+                  <li class="card__item">
+                    <span class="card__item-term">Цена</span>
+                    <span class="card__item-desc">500 ₽</span>
+                  </li>
+                </ul>
+              </div>
               <button class="card__button button" type="button">Заказать</button>
             </li>
             <li class="catalog__item card card--more">
-              <h3 class="card__title">Показать еще 100500 товаров</h3>
+              <h3 class="card__title card__title--more">Показать еще 100500 товаров</h3>
               <p class="card__desc-more">На самом деле вкусов гораздо больше!</p>
               <button class="card__button button button--secondary" type="button">Показать все</button>
             </li>

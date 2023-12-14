@@ -7,8 +7,40 @@
 }
 
 .main-nav__burger {
+  position: relative;
   width: 24px;
   height: 24px;
   border: none;
+  background: transparent;
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-dark;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 4px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-dark;
+  }
+}
+
+.main-nav__burger-span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 2px;
+  background-color: $basic-dark;
 }
