@@ -1,3 +1,25 @@
 .result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+}
 
+.result-list__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.result-list__term {
+  color: $basic-dark;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.result-list__desc {
+  font-size: 12px;
+  line-height: 100%;
 }

@@ -1,3 +1,17 @@
 .secondary-footer {
+  background-color: $basic-grey;
+}
 
+.secondary-footer__wrapper {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  max-width: 320px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.secondary-footer__logo {
+  display: flex;
+  justify-content: center;
 }

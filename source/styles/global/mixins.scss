@@ -1,0 +1,15 @@
+@mixin flex($align-items: center, $justify-content: center) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin font-face($font-family, $font-weight, $font-style, $src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $src;
+    font-display: swap;
+  }
+}

@@ -1,3 +1,16 @@
-.hero {
+.hero__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+.hero__subtitle {
+  font-family: $secondary-font;
+  color: $basic-dark;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__image {
+  display: block;
 }

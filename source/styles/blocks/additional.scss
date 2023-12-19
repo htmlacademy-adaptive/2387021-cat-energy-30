@@ -1,3 +1,39 @@
-.additional {
+.additional__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+.additional__title {
+  color: $basic-dark;
+  text-align: center;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.additional__item {
+  list-style: none;
+}
+
+.additional__subtitle {
+  color: #222222;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional__desc,
+.additional__price {
+  line-height: 14px;
 }

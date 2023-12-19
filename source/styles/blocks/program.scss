@@ -1,3 +1,11 @@
-.program {
+.program__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+.program__desc {
+  color: $basic-dark;
+  font-family: $secondary-font;
+  text-transform: uppercase;
 }

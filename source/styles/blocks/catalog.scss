@@ -1,3 +1,10 @@
-.catalog {
+.catalog__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
 }
