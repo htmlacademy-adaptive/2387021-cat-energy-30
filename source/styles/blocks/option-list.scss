@@ -6,9 +6,44 @@
 }
 
 .option-list__item {
+  position: relative;
   background-color: $basic-grey;
   padding: 30px 33px 18px 20px;
   list-style: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 24px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.option-list__item--weight-loss::after {
+  top: 21px;
+  left: 27px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../images/index/cat-slim-mob@1x.png");
+  background-position: center;
+}
+
+.option-list__item--weight-gain::after {
+  top: 35px;
+  left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../images/index/cat-pro-mob@1x.png");
+  background-position: center;
 }
 
 .option-list__title {
@@ -18,6 +53,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0 29px 0 70px;
 }
 
 .option-list__button {
@@ -38,7 +74,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background-image: url("../../images/icons/icon-arrow.svg");
+    background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
   }
 }

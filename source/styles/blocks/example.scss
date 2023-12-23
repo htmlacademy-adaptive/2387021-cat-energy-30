@@ -3,7 +3,7 @@
 }
 
 .example__wrapper {
-  max-width: 320px;
+  max-width: $mobile;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -18,4 +18,28 @@
   font-family: $secondary-font;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  background-color: $basic-white;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+    background-image: url("../../images/icons/stack.svg#slider-arrows");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

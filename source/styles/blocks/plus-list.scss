@@ -1,7 +1,44 @@
 .plus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin: 0;
 }
 
 .plus-list__item {
+  position: relative;
   list-style: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.plus-list__item--healthy::before {
+  background-image: url("../../images/icons/stack.svg#icon-leaf");
+}
+
+.plus-list__item--powder::before {
+  background-image: url("../../images/icons/stack.svg#icon-powder");
+}
+
+.plus-list__item--functional::before {
+  background-image: url("../../images/icons/stack.svg#icon-eat");
+}
+
+.plus-list__item--time::before {
+  background-image: url("../../images/icons/stack.svg#icon-watch");
+}
+
+.plus-list__desc {
+  margin: 0;
+  padding: 0 0 0 100px;
 }

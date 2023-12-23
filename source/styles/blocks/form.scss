@@ -4,7 +4,35 @@
 }
 
 .form__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
   list-style: none;
+  // mask-repeat: no-repeat;
+  // mask-position: center right -172px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.form__item--email::before {
+  mask-image: url("../../images/icons/stack.svg#icon-email");
+  background-color: $basic-dark;
+}
+
+.form__item--tel::before {
+  mask-image: url("../../images/icons/stack.svg#icon-phone");
+  background-color: $basic-dark;
 }
 
 .form__legend {
