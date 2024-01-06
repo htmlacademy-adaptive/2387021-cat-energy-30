@@ -3,9 +3,17 @@
 }
 
 .example__wrapper {
-  max-width: $mobile;
-  padding: 0 20px;
+  // max-width: $mobile;
+  padding: 20px 20px 40px;
   margin: 0 auto;
+}
+
+.main-title.example__title {
+  margin: 0 0 40px 0;
+}
+
+.example__desc {
+  margin: 0 0 20px 0;
 }
 
 .example__list {
@@ -18,17 +26,21 @@
   font-family: $secondary-font;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 0 20px 0;
 }
 
 .example__button {
-  position: relative;
+  position: absolute;
   width: 40px;
   height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid #666666;
   background-color: $basic-white;
-
   border-radius: 50%;
-  cursor: pointer;
+  cursor: e-resize;
+  z-index: 5;
 
   &::before {
     position: absolute;
@@ -41,5 +53,15 @@
     background-image: url("../../images/icons/stack.svg#slider-arrows");
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 4;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 256px;
+    width: 4px;
+    background-color: #666666;
+    transform: translate(-50%, -50%);
   }
 }

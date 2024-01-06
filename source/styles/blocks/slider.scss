@@ -1,5 +1,22 @@
+.slider {
+  position: relative;
+  height: 256px;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .slider__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__item--after {
+  z-index: 3;
 }

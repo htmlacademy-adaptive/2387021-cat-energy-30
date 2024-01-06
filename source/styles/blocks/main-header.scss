@@ -5,9 +5,18 @@
 }
 
 .main-header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 320px;
+  position: relative;
+  // max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.main-header__top-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  background-color: $basic-white;
+  z-index: 3;
 }

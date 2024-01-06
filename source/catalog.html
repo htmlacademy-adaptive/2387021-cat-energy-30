@@ -16,14 +16,22 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo logo" href="#">
-          <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/icons/logo-desc.svg">
-            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/icons/logo-tab.svg">
-            <img class="logo__image logo__image--icon" src="./images/icons/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="33" height="38">
-          </picture>
-          <img class="logo__image logo__image--text" src="./images/icons/logo-header-text.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
-        </a>
+        <div class="main-header__top-content">
+          <a class="main-header__logo logo" href="#">
+            <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/icons/logo-desc.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/icons/logo-tab.svg">
+              <img class="logo__image logo__image--icon" src="./images/icons/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="33" height="38">
+            </picture>
+          </a>
+          <a class="main-header__logo logo" href="#">
+            <img class="logo__image logo__image--text" src="./images/icons/logo-header-text.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
+          </a>
+          <button class="burger" type="button">
+            <span class="burger__span"></span>
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
@@ -42,10 +50,6 @@
               </a>
             </li>
           </ul>
-          <button class="main-nav__burger" type="button">
-            <span class="main-nav__burger-span"></span>
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
         </nav>
       </div>
     </header>
@@ -347,5 +351,6 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="scripts/index.js"></script> -->
   </body>
 </html>

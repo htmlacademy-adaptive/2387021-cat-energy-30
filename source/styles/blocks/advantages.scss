@@ -1,9 +1,13 @@
 .advantages__wrapper {
-  max-width: $mobile;
-  padding: 0 20px;
+  // max-width: $mobile;
+  padding: 0 20px 49px 20px;
   margin: 0 auto;
 }
 
 .advantages__list {
   padding: 0;
+}
+
+.main-title.advantages__title {
+  margin: 0 0 42px 0;
 }

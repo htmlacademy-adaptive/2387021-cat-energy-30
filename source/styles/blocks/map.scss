@@ -1,3 +1,21 @@
+.map {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    background-image: url("../../images/map-pin-mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 57px;
+    height: 53px;
+  }
+}
+
 .map__image-reserve {
   display: block;
 }

@@ -1,16 +1,39 @@
+.hero {
+  margin-bottom: 20px;
+  background-image: url(../../images/index/hero-cat-mob@2x.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
 .hero__wrapper {
-  max-width: $mobile;
+  // max-width: $mobile;
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 28%, $basic-white 28%, $basic-white 100%);
   padding: 0 20px;
   margin: 0 auto;
 }
 
+.hero__title.main-title {
+  color: $basic-white;
+  text-align: center;
+  margin: 0 0 25px 0;
+  padding-top: 27px;
+}
+
 .hero__subtitle {
   font-family: $secondary-font;
-  color: $basic-dark;
+  color: $basic-white;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 29px 0;
 }
 
 .hero__image {
   display: block;
+  margin-bottom: 3px;
+}
+
+.hero__button {
+  margin-bottom: 20px;
 }
