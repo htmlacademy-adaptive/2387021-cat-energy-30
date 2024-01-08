@@ -9,6 +9,13 @@
   // max-width: 320px;
   padding: 40px 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
 }
 
 .secondary-footer__logo {

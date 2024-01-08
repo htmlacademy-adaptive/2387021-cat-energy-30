@@ -1,6 +1,38 @@
-.form__list {
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  border: none;
   margin: 0;
   padding: 0;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0 20px 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.form__list--contacts {
+  border: none;
+  padding: 0 20px 24px;
+}
+
+.form__list--extra.form__list {
+  border: none;
+  margin: 0 0 34px 0;
+  padding: 22px 20px 0;
+}
+
+.form__list--radio {
+  margin-bottom: 26px;
+  padding: 22px 20px 19px;
+  gap: 13px;
 }
 
 .form__item {
@@ -35,6 +67,10 @@
   background-color: $basic-dark;
 }
 
+.form__list--radio .form__item {
+  gap: 15px;
+}
+
 .form__legend {
   color: $basic-dark;
   font-family: $secondary-font;
@@ -42,8 +78,28 @@
   line-height: 26px;
 }
 
+.form__legend--contacts {
+  margin: 0 20px 35px;
+}
+
+.form__legend--comments {
+  margin: 0 20px 38px;
+}
+
+.form__legend--extra {
+  margin: 0 20px 36px;
+}
+
 .form__required {
   color: $basic-dark;
   text-align: center;
   line-height: 16px;
+}
+
+.form__input.textarea {
+  margin: 0 20px 23px;
+}
+
+.form__button {
+  margin-bottom: 21px;
 }

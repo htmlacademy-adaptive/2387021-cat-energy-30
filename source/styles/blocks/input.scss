@@ -6,6 +6,8 @@
   line-height: 18px;
   min-height: 45px;
   text-transform: uppercase;
+  outline: 1px solid #e7e7e7;
+  border: none;
 
   &::placeholder {
     color: $text-color;
@@ -14,4 +16,9 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }

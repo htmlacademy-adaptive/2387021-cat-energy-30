@@ -3,6 +3,11 @@
   height: 256px;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__list {

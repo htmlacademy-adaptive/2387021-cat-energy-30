@@ -2,7 +2,14 @@
   // max-width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: $basic-white;
   padding: 26px 20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 164px 158px;
+    justify-content: space-between;
+    padding: 61px 70px;
+  }
 }
 
 .address__title {
@@ -19,4 +26,15 @@
   font-style: normal;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+  }
+}
+
+.address__location-city {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 20px;
+  }
 }

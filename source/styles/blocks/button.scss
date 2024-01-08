@@ -10,6 +10,12 @@
   cursor: pointer;
   text-decoration: none;
   border: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
 }
 
 .button--secondary {

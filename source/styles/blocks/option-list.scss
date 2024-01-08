@@ -4,6 +4,10 @@
   gap: 20px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
 }
 
 .option-list__item {
@@ -21,11 +25,23 @@
     height: 50px;
     border-radius: 50%;
     background-color: $basic-green;
+
+    @media (min-width: $tablet) {
+      top: 92px;
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &::after {
     position: absolute;
     content: "";
+  }
+
+  @media (min-width: $tablet) {
+    padding: 77px 316px 57px 52px;
   }
 }
 
@@ -36,6 +52,16 @@
   height: 50px;
   background-image: url("../../images/index/cat-slim-mob@1x.png");
   background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    top: 81px;
+    left: auto;
+    right: 93px;
+    width: 140px;
+    height: 194px;
+    background-image: url("../../images/index/cat-slim-tab@1x.png");
+  }
 }
 
 .option-list__item--weight-gain::after {
@@ -45,6 +71,15 @@
   height: 28px;
   background-image: url("../../images/index/cat-pro-mob@1x.png");
   background-position: center;
+
+  @media (min-width: $tablet) {
+    top: 135px;
+    left: auto;
+    right: 29px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../../images/index/cat-pro-tab@1x.png");
+  }
 }
 
 .option-list__title {
@@ -55,6 +90,12 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0 29px 29px 70px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px;
+  }
 }
 
 .option-list__desc {
@@ -69,6 +110,15 @@
     width: 100%;
     height: 1px;
     background-color: #d9d9d9;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    color: $basic-dark;
+    margin: 0 0 52px 0;
   }
 }
 
@@ -92,5 +142,10 @@
     transform: translateY(-50%);
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: normal;
   }
 }

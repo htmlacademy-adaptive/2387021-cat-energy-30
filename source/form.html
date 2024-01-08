@@ -14,7 +14,7 @@
     <script src="./scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--underline">
       <div class="main-header__wrapper">
         <div class="main-header__top-content">
           <a class="main-header__logo logo" href="#">
@@ -58,17 +58,17 @@
       <section class="program">
         <div class="program__wrapper">
           <h1 class="program__title main-title">Подбор программы</h1>
-          <p class="program__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="program__desc">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
           <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__field">
               <legend class="visually-hidden">Информация о питомце.</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__label label" for="cat-name">ИМЯ:<abbr title="Обязательно к заполнению.">*</abbr></label>
+                  <label class="form__label label" for="cat-name">ИМЯ:*</label>
                   <input class="form__input input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
                 </li>
                 <li class="form__item">
-                  <label class="form__label label" for="cat-weight">Вес (кг):<abbr title="Обязательно к заполнению.">*</abbr></label>
+                  <label class="form__label label" for="cat-weight">Вес (кг):*</label>
                   <input class="form__input input" type="number" id="cat-weight" name="cat-weight" min="0" placeholder="7" required>
                 </li>
                 <li class="form__item">
@@ -79,7 +79,7 @@
             </fieldset>
             <fieldset class="form__field">
               <legend class="visually-hidden">Ваша цель.</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--radio">
                 <li class="form__item">
                   <label class="form__label label">
                     <input class="form__input visually-hidden" type="radio" name="program-goal" value="weight-loss" checked>
@@ -104,26 +104,26 @@
               </ul>
             </fieldset>
             <fieldset class="form__field">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <ul class="form__list">
+              <legend class="form__legend form__legend--contacts title-highlighted">Контактные данные<br>(владельца кота)</legend>
+              <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--email">
-                  <label class="form__label label" for="email">E-mail:<abbr title="Обязательно к заполнению.">*</abbr></label>
+                  <label class="form__label label" for="email">E-mail:*</label>
                   <input class="form__input input" type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
                 </li>
                 <li class="form__item form__item--tel">
-                  <label class="form__label label" for="tel">Телефон:<abbr title="Обязательно к заполнению.">*</abbr></label>
+                  <label class="form__label label" for="tel">Телефон:*</label>
                   <input class="form__input input input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__field">
-              <legend class="form__legend">Комментарий</legend>
+              <legend class="form__legend form__legend--comments title-highlighted">Комментарий</legend>
                 <label class="form__label label visually-hidden" for="comment">Комментарий для дополнительной информации о коте.</label>
                 <textarea class="form__input textarea" rows="4" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__field">
-              <legend class="form__legend">Дополнительно</legend>
-              <ul class="form__list">
+              <legend class="form__legend form__legend--extra title-highlighted">Дополнительно</legend>
+              <ul class="form__list form__list--extra form__list--radio">
                 <li class="form__item">
                   <label class="form__label label">
                     <input class="form__input visually-hidden" type="checkbox" name="extra" value="sweetener" checked>
@@ -165,7 +165,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__address address">
           <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="address__location">ул. Большая Конюшенная, д. 19/8 <span class="address__location-city">Санкт-Петербург</span></address>
         </div>
         <div class="main-footer__map map">
           <!-- <div class="map__image">

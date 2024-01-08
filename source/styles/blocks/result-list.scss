@@ -5,6 +5,11 @@
   gap: 32px;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    gap: 43px;
+  }
 }
 
 .result-list__item {
@@ -36,4 +41,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $dark-grey;
+
+  @media (min-width: $tablet) {
+    background-color: $basic-white;
+  }
 }
