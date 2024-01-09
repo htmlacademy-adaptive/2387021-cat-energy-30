@@ -2,15 +2,30 @@
   // max-width: 320px;
   padding: 27px 0 32px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 27px 0 60px;
+  }
 }
 
 .program__title {
-  margin: 0 0 37px 20px;
+  margin: 0 20px 37px;
+
+  @media (min-width: $tablet) {
+    margin: 0 70px 54px;
+  }
 }
 
 .program__desc {
   color: $basic-dark;
   font-family: $secondary-font;
   text-transform: uppercase;
-  margin: 0 0 39px 20px;
+  margin: 0 20px 39px;
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 70px 66px;
+  }
 }

@@ -16,15 +16,28 @@
     width: 78px;
     height: 80px;
     background-image: url("../../images/icons/stack.svg#icon-gift");
+
+    @media (min-width: $tablet) {
+      left: 77px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    background-position: 0 -330px;
   }
 }
 
 .offer__desc {
   min-height: 290px;
   background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: contain;
   margin: 0;
   padding: 187px 61px 20px 58px;
+
+  @media (min-width: $tablet) {
+    min-height: 200px;
+    text-align: left;
+    padding: 71px 125px 20px 421px;
+  }
 }

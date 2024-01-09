@@ -7,12 +7,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 57px;
+    height: 53px;
     background-color: transparent;
     background-image: url("../../images/map-pin-mob@1x.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 57px;
-    height: 53px;
+
+    @media (min-width: $tablet) {
+      background-image: url("../../images/map-pin-tab@1x.png");
+      width: 113px;
+      height: 106px;
+    }
   }
 }
 

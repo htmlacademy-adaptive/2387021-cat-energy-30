@@ -7,6 +7,10 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    gap: 20px;
+  }
 }
 
 .label__mark {

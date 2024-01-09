@@ -1,6 +1,6 @@
 .textarea {
   resize: none;
-  min-width: 280px;
+  width: 88%;
   min-height: 150px;
   color: $text-color;
   font-family: $secondary-font;
@@ -9,4 +9,8 @@
   text-transform: uppercase;
   padding: 14px 14px 14px 15px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet) {
+    width: 82%;
+  }
 }

@@ -9,6 +9,7 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr;
     min-height: 511px;
+    background: linear-gradient($basic-white 16%, $basic-grey 16% 100%);
     padding: 28px 37px 40px;
     border: none;
   }
@@ -53,6 +54,7 @@
 
   @media (min-width: $tablet) {
     gap: 10px;
+    margin: 0 0 37px 0;
   }
 }
 
@@ -81,13 +83,6 @@
   }
 }
 
-.card__desc-more {
-  @media (min-width: $tablet) {
-    font-size: 16px;
-    line-height: 18px;
-  }
-}
-
 .card--more {
   position: relative;
   grid-template-columns: 1fr;
@@ -112,7 +107,10 @@
   }
 
   @media (min-width: $tablet) {
+    min-height: 429px;
     padding: 160px 37px 40px;
+    outline: 2px solid $basic-grey;
+    background: $basic-white;
   }
 }
 
@@ -133,5 +131,7 @@
 
   @media (min-width: $tablet) {
     margin: 0 0 82px 0;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
