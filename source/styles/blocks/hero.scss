@@ -1,6 +1,6 @@
 .hero {
   margin-bottom: 20px;
-  background-image: url(../../images/index/hero-cat-mob@2x.jpg);
+  background-image: url("../../images/index/hero-cat-mob@2x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -74,5 +74,16 @@
     top: 270px;
     left: 120px;
     z-index: 5;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
+}
+
+.hero__button.button {
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
   }
 }

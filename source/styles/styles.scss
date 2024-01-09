@@ -4,7 +4,6 @@
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
-@import "./global/title-highlighted.scss";
 
 /* BLOCKS */
 /* HEADER */
@@ -38,6 +37,7 @@
 /* FORM */
 @import "./blocks/program.scss";
 @import "./blocks/form.scss";
+@import "./global/title-highlighted.scss";
 @import "./blocks/label.scss";
 @import "./blocks/input.scss";
 @import "./blocks/textarea.scss";
