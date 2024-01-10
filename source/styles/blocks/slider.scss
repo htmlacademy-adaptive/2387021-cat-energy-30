@@ -8,6 +8,11 @@
     width: 560px;
     height: 512px;
   }
+
+  @media (min-width: $desctop) {
+    grid-row: 1/4;
+    grid-column: 2/3;
+  }
 }
 
 .slider__list {

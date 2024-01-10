@@ -24,9 +24,17 @@
     min-width: 436px;
     animation: none;
   }
+
+  @media (min-width: $desctop) {
+    background-color: transparent;
+  }
 }
 
 .main-nav--active {
+  display: block;
+}
+
+.main-nav--nojs.main-nav {
   display: block;
 }
 

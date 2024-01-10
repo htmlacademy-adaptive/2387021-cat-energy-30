@@ -1,5 +1,4 @@
 .address {
-  // max-width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: $basic-white;
@@ -10,10 +9,23 @@
     justify-content: space-between;
     padding: 61px 70px;
   }
+
+  @media (min-width: $desctop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 3;
+    min-width: 565px;
+    padding: 61px 78px 60px 80px;
+  }
 }
 
 .address--secondary {
   background-color: $basic-grey;
+
+  @media (min-width: $desctop) {
+    background-color: $basic-white;
+  }
 }
 
 .address__title {
@@ -38,6 +50,10 @@
 
   @media (min-width: $tablet) {
     text-align: right;
+  }
+
+  @media (min-width: $desctop) {
+    text-align: left;
   }
 }
 

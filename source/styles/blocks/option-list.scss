@@ -9,6 +9,13 @@
   @media (min-width: $tablet) {
     gap: 30px;
   }
+
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin: -65px 0 0;
+  }
 }
 
 .option-list__item {
@@ -34,6 +41,14 @@
       width: 200px;
       height: 200px;
     }
+
+    @media (min-width: $desctop) {
+      top: 47px;
+      left: 52px;
+      right: auto;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &::after {
@@ -43,6 +58,10 @@
 
   @media (min-width: $tablet) {
     padding: 77px 316px 57px 52px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 77px 61px 55px 52px;
   }
 }
 
@@ -63,6 +82,15 @@
     height: 194px;
     background-image: url("../../images/index/cat-slim-tab@1x.png");
   }
+
+  @media (min-width: $desctop) {
+    top: 41px;
+    left: 67px;
+    right: auto;
+    width: 70px;
+    height: 97px;
+    background-image: url("../../images/index/cat-slim-desc@1x.png");
+  }
 }
 
 .option-list__item--weight-gain::after {
@@ -81,6 +109,15 @@
     height: 112px;
     background-image: url("../../images/index/cat-pro-tab@1x.png");
   }
+
+  @media (min-width: $desctop) {
+    top: 67px;
+    left: 33px;
+    right: auto;
+    width: 134px;
+    height: 56px;
+    background-image: url("../../images/index/cat-pro-desc@1x.png");
+  }
 }
 
 .option-list__title {
@@ -96,6 +133,10 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 24px;
+  }
+
+  @media (min-width: $desctop) {
+    margin: 0 0 73px 162px;
   }
 }
 
@@ -120,6 +161,11 @@
   @media (min-width: $tablet) {
     color: $basic-dark;
     margin: 0 0 52px 0;
+  }
+
+  @media (min-width: $desctop) {
+    color: $basic-dark;
+    margin: 0 0 27px 0;
   }
 }
 
@@ -147,6 +193,11 @@
 
   @media (min-width: $tablet) {
     font-size: 16px;
+    line-height: normal;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 20px;
     line-height: normal;
   }
 }

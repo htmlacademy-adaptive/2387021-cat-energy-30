@@ -9,6 +9,10 @@
     background: transparent;
     margin-bottom: 45px;
   }
+
+  @media (min-width: $desctop) {
+    margin-bottom: 0;
+  }
 }
 
 .hero__wrapper {
@@ -23,6 +27,36 @@
     position: relative;
     background: transparent;
     padding: 40px 30px 0;
+  }
+
+  @media (min-width: $desctop) {
+    position: static;
+    padding: 0 110px;
+  }
+}
+
+.hero__image-bg {
+  @media (min-width: $desctop) {
+    position: absolute;
+    min-width: 720px;
+    min-height: 694px;
+    background-color: rgba(104, 183, 56, 0.85);
+    top: 0;
+    right: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../images/index/hero-cat-desc@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+      z-index: -1;
+    }
   }
 }
 
@@ -57,6 +91,10 @@
     margin: 0 0 50px 0;
     padding: 0 0 0 90px;
   }
+
+  @media (min-width: $desctop) {
+    margin: 0 0 52px 0;
+  }
 }
 
 .hero__image {
@@ -65,6 +103,12 @@
 
   @media (min-width: $tablet) {
     margin: -83px auto 0;
+  }
+
+  @media (min-width: $desctop) {
+    position: relative;
+    top: -230px;
+    left: 113px;
   }
 }
 

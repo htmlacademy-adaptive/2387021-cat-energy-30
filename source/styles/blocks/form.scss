@@ -3,6 +3,29 @@
   flex-direction: column;
 }
 
+.form__field-wrapper {
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 0 110px 70px;
+  }
+}
+
+.form__field-wrapper .form__field,
+.form__field-wrapper .form__list {
+  @media (min-width: $desctop) {
+    padding: 0;
+  }
+}
+
+.form__field-wrapper .form__list.form__list--radio {
+  @media (min-width: $desctop) {
+    padding: 25px 25px 25px 28px;
+    margin: 0;
+  }
+}
+
 .form__field {
   border: none;
   margin: 0;
@@ -37,6 +60,13 @@
   @media (min-width: $tablet) {
     padding: 0 70px 65px;
   }
+
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 0 110px 70px;
+  }
 }
 
 .form__list--extra.form__list {
@@ -49,6 +79,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     padding: 0 70px 0;
+  }
+
+  @media (min-width: $desctop) {
+    margin: 0 0 60px 0;
+    padding: 0 110px 0;
   }
 }
 
@@ -67,6 +102,12 @@
 .form__list--extra.form__list--radio {
   @media (min-width: $tablet) {
     outline: none;
+  }
+
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 }
 
@@ -124,6 +165,10 @@
   @media (min-width: $tablet) {
     margin: 0 70px 76px;
   }
+
+  @media (min-width: $desctop) {
+    margin: 0 110px 76px;
+  }
 }
 
 .form__legend--comments {
@@ -132,6 +177,10 @@
   @media (min-width: $tablet) {
     margin: 0 70px 87px;
   }
+
+  @media (min-width: $desctop) {
+    margin: 0 110px 78px;
+  }
 }
 
 .form__legend--extra {
@@ -139,6 +188,10 @@
 
   @media (min-width: $tablet) {
     margin: 0 70px 57px;
+  }
+
+  @media (min-width: $desctop) {
+    margin: 0 110px 57px;
   }
 }
 
@@ -154,6 +207,10 @@
   @media (min-width: $tablet) {
     margin: 0 70px 65px;
   }
+
+  @media (min-width: $desctop) {
+    margin: 0 110px 70px;
+  }
 }
 
 .form__button-wrapper {
@@ -167,12 +224,26 @@
     align-items: center;
     padding: 0 70px;
   }
+
+  @media (min-width: $desctop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    align-items: left;
+    padding: 0 110px;
+  }
 }
 
 .form__button {
   margin-bottom: 21px;
 
   @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
     margin: 0;
+  }
+
+  @media (min-width: $desctop) {
+    grid-column: 1/3;
   }
 }

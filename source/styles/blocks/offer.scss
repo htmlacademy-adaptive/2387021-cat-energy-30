@@ -22,10 +22,22 @@
       top: 50%;
       transform: translate(0, -50%);
     }
+
+    @media (min-width: $desctop) {
+      left: 50%;
+      top: 56px;
+      transform: translate(-50%, 0);
+    }
   }
 
   @media (min-width: $tablet) {
-    background-position: 0 -330px;
+    background-image: url("../../images/catalog/catalog-bg-tab@2x.jpg");
+  }
+
+  @media (min-width: $desctop) {
+    background-image: url("../../images/catalog/catalog-bg-desc@2x.jpg");
+    height: 288px;
+    width: 245px;
   }
 }
 
@@ -39,5 +51,11 @@
     min-height: 200px;
     text-align: left;
     padding: 71px 125px 20px 421px;
+  }
+
+  @media (min-width: $desctop) {
+    min-height: 288px;
+    text-align: center;
+    padding: 185px 42px 43px;
   }
 }

@@ -15,6 +15,17 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+
+    @media (min-height: $tablet) {
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+
+  @media (min-height: $tablet) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 11px 36px 11px 20px;
   }
 }
 

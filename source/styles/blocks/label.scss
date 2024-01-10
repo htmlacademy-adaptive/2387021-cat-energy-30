@@ -10,6 +10,8 @@
 
   @media (min-width: $tablet) {
     gap: 20px;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 
@@ -22,6 +24,11 @@
   border: none;
   outline: 1px solid #cdcdcd;
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__input[type="checkbox"] + .label__mark {
