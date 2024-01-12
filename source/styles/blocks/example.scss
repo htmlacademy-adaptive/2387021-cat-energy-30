@@ -1,11 +1,71 @@
 .example {
-  background-color: $dark-grey;
+  background: $dark-grey;
+
+  @media (min-width: $tablet) {
+    background: linear-gradient($basic-white 58%, $dark-grey 58% 100%);
+  }
+
+  @media (min-width: $desctop) {
+    background: linear-gradient($basic-white 28%, $basic-grey 28% 100%);
+  }
 }
 
 .example__wrapper {
-  max-width: $mobile;
-  padding: 0 20px;
+  padding: 20px 20px 40px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 45px 30px 101px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 69px 110px 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.main-title.example__title {
+  margin: 0 0 40px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 60px 0;
+  }
+
+  @media (min-width: $desctop) {
+    margin: 0 0 146px 0;
+  }
+}
+
+.example__content-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: $desctop) {
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin-bottom: 0;
+  }
+}
+
+.example__desc {
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 55px 0;
+  }
+
+  @media (min-width: $desctop) {
+    grid-column: 1/2;
+    width: 433px;
+    margin: 0 0 69px 0;
+  }
 }
 
 .example__list {
@@ -18,17 +78,33 @@
   font-family: $secondary-font;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desctop) {
+    display: flex;
+    gap: 63px;
+    margin: 0;
+  }
 }
 
 .example__button {
-  position: relative;
+  position: absolute;
   width: 40px;
   height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid #666666;
   background-color: $basic-white;
-
   border-radius: 50%;
-  cursor: pointer;
+  cursor: e-resize;
+  z-index: 5;
 
   &::before {
     position: absolute;
@@ -41,5 +117,30 @@
     background-image: url("../../images/icons/stack.svg#slider-arrows");
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 4;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 256px;
+    width: 4px;
+    background-color: #666666;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet) {
+      height: 512px;
+    }
+  }
+}
+
+.example__expenses-span {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-top: 0;
   }
 }

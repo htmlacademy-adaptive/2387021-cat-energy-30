@@ -1,6 +1,10 @@
 .copyright {
   @include flex(center, space-between);
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    gap: 23px;
+  }
 }
 
 .copyright__span {

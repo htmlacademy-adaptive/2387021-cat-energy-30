@@ -6,6 +6,8 @@
   line-height: 18px;
   min-height: 45px;
   text-transform: uppercase;
+  outline: 1px solid #e7e7e7;
+  border: none;
 
   &::placeholder {
     color: $text-color;
@@ -13,5 +15,21 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+
+    @media (min-height: $tablet) {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
+
+  @media (min-height: $tablet) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 11px 36px 11px 20px;
+  }
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
 }

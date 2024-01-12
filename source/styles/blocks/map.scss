@@ -1,3 +1,37 @@
-.map__image-reserve {
-  display: block;
+.map {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 57px;
+    height: 53px;
+    background-color: transparent;
+    background-image: url("../../images/map-pin-mob@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      background-image: url("../../images/map-pin-tab@1x.png");
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: $desctop) {
+      left: 67%;
+    }
+  }
 }
+
+.map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+// .map__image-reserve {
+//   display: block;
+// }

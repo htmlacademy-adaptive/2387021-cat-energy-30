@@ -6,9 +6,19 @@
   display: flex;
   gap: 40px;
   flex-direction: column;
-  max-width: 320px;
   padding: 40px 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 66px 110px;
+  }
 }
 
 .secondary-footer__logo {

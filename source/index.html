@@ -16,17 +16,25 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="#">
-        <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/icons/logo-desc.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/icons/logo-tab.svg">
-          <img class="logo__image logo__image--icon" src="./images/icons/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="33" height="38">
-        </picture>
-        <img class="logo__image logo__image--text" src="./images/icons/logo-header-text.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
-      </a>
-      <nav class="main-nav">
+      <div class="main-header__top-content">
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/icons/logo-desc.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/icons/logo-tab.svg">
+            <img class="logo__image logo__image--icon" src="./images/icons/logo-mob.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="33" height="38">
+          </picture>
+        </a>
+        <a class="main-header__logo logo" href="#">
+          <img class="logo__image logo__image--text" src="./images/icons/logo-header-text.svg" alt="Логотип интернет-мазанина 'Cat Energy'." width="101" height="18">
+        </a>
+        <button class="burger" type="button">
+          <span class="burger__span"></span>
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--nojs">
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item nav-list__item--current">
             <a class="nav-list__link" href="./index.html" aria-current="page">
@@ -44,10 +52,6 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__burger" type="button">
-          <span class="main-nav__burger-span"></span>
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
       </nav>
     </div>
   </header>
@@ -55,14 +59,15 @@
   <main class="main-container">
     <section class="hero">
       <div class="hero__wrapper">
+        <div class="hero__image-bg"></div>
         <h1 class="hero__title main-title">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
+        <a class="hero__button button" href="./form.html">Подобрать программу</a>
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/index/hero-bg-desc@1x.png 1x, ./images/index/hero-bg-desc@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/index/hero-bg-tab@1x.png 1x, ./images/index/hero-bg-tab@2x.png 2x">
           <img class="hero__image" src="./images/index/hero-bg-mob@1x.png" srcset="./images/index/hero-bg-mob@2x.png 2x" alt="Изображение 'Cat Energy' со вкусом курицы." width="280" height="270">
         </picture>
-        <a class="hero__button button" href="./form.html">Подобрать программу</a>
         <ul class="hero__list option-list">
           <li class="option-list__item option-list__item--weight-loss">
             <h3 class="option-list__title">Похудение</h3>
@@ -102,29 +107,31 @@
       <div class="example__wrapper">
         <h2 class="example__title main-title">Живой пример</h2>
         <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="example__list result-list">
-          <li class="result-list__item">
-            <p class="result-list__term">5 КГ</p>
-            <p class="result-list__desc">снижение веса</p>
-          </li>
-          <li class="result-list__item">
-            <p class="result-list__term">60 ДНЕЙ</p>
-            <p class="result-list__desc">затрачено времени</p>
-          </li>
-        </ul>
-        <p class="example__expenses">Затраты на питание: <span class="example__expenses-span">15 000 РУБ.</span></p>
+        <div class="example__content-wrapper">
+          <ul class="example__list result-list">
+            <li class="result-list__item">
+              <p class="result-list__term">5 КГ</p>
+              <p class="result-list__desc">снижение<br>веса</p>
+            </li>
+            <li class="result-list__item">
+              <p class="result-list__term">60 ДНЕЙ</p>
+              <p class="result-list__desc">затрачено времени</p>
+            </li>
+          </ul>
+          <p class="example__expenses">Затраты на питание: <span class="example__expenses-span">15 000 РУБ.</span></p>
+        </div>
         <div class="example__slider slider">
           <button class="example__button" type="button">
             <span class="visually-hidden">Ползунок для демонтсрации нагдяности изменений после использования 'Cat Energy'.</span>
           </button>
           <ul class="slider__list">
-            <li class="slider__item">
+            <li class="slider__item slider__item--before">
               <picture>
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/index/fat-cat-desc@1x.png 1x, ./images/index/fat-cat-desc@2x.png 2x">
                 <img class="slider__image slider__image--before" src="./images/index/fat-cat-mob@1x.png" srcset="./images/index/fat-cat-mob@2x.png 2x" width="280" height="256" alt="Изображение кота с излишним весом.">
               </picture>
             </li>
-            <li class="slider__item">
+            <li class="slider__item slider__item--after">
               <picture>
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/index/thin-cat-desc@1x.png 1x, ./images/index/thin-cat-desc@2x.png 2x">
                 <img class="slider__image slider__image--after" src="./images/index/thin-cat-mob@1x.png" srcset="./images/index/thin-cat-mob@2x.png 2x" width="280" height="256" alt="Изображение стройного кота.">
@@ -139,18 +146,20 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__address address">
-        <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <h3 class="address__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+        <address class="address__location">ул. Большая Конюшенная, д. 19/8 <span class="address__location-city">Санкт-Петербург</span></address>
       </div>
       <div class="main-footer__map map">
         <!-- <div class="map__image">
           <span class="visually-hidden">Карта местоположения магазина Cat Energy.</span>
         </div> -->
-        <picture>
+        <!-- <picture>
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desc@1x.png 1x, ./images/map-desc@2x.png 2x">
           <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tab@1x.png 1x, ./images/map-tab@2x.png 2x">
           <img class="map__image-reserve" src="./images/map-mob@1x.png" srcset="./images/map-mob@2x.png 2x" alt="Карта с расположением магазина." width="320" height="362">
-        </picture>
+        </picture> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+        </iframe>
       </div>
       <div class="main-footer__secondary-footer secondary-footer">
         <div class="secondary-footer__wrapper">
@@ -201,7 +210,7 @@
     </div>
   </footer>
   <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=b045ab3d-5d7b-46d9-85e2-ae3a5a8949ed&lang=ru_RU"></script> -->
-  <script src="./scripts/index-map.js"></script>
+  <!-- <script src="./scripts/index.js"></script> -->
 </body>
 
 </html>

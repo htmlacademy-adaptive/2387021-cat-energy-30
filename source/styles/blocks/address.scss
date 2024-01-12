@@ -1,6 +1,31 @@
 .address {
-  max-width: 320px;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $basic-white;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 164px 158px;
+    justify-content: space-between;
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $desctop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 3;
+    min-width: 565px;
+    padding: 61px 78px 60px 80px;
+  }
+}
+
+.address--secondary {
+  background-color: $basic-grey;
+
+  @media (min-width: $desctop) {
+    background-color: $basic-white;
+  }
 }
 
 .address__title {
@@ -10,9 +35,31 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__location {
   font-style: normal;
   line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+  }
+
+  @media (min-width: $desctop) {
+    text-align: left;
+  }
+}
+
+.address__location-city {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 20px;
+  }
 }

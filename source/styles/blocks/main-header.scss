@@ -1,13 +1,53 @@
 .main-header {
   font-family: $secondary-font;
   color: $basic-dark;
-  padding: 13px 0 14px 0;
+
+  @media (min-width: $tablet) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 55px 0 29px;
+  }
+}
+
+.main-header--underline {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .main-header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 320px;
+  position: relative;
+  // max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desctop) {
+    padding: 0 110px;
+  }
+}
+
+.main-header__top-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  background-color: $basic-white;
+  z-index: 6;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    gap: 13px;
+  }
 }

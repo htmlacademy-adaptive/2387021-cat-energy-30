@@ -1,18 +1,96 @@
 .nav-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-right: 3px;
+  }
+
+  @media (min-width: $desctop) {
+    max-width: 610px;
+  }
 }
 
 .nav-list__item {
+  position: relative;
   list-style: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+
+    @media (min-width: $tablet) {
+      width: 0;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+
+    @media (min-width: $tablet) {
+      width: 0;
+    }
+  }
+}
+
+.nav-list__item--current {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 52px;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.main-header--index .nav-list__item--current::before {
+  @media (min-width: $desctop) {
+    background-color: $basic-white;
+  }
 }
 
 .nav-list__link {
+  @include flex;
+  min-height: 65px;
+  width: 100%;
   font-size: 20px;
   line-height: 20px;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.main-header--index .nav-list__link {
+  @media (min-width: $desctop) {
+    color: $basic-white;
+  }
 }

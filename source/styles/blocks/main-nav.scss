@@ -1,42 +1,43 @@
+@keyframes nav-appearance {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.main-nav {
+  display: none;
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $basic-white;
+  z-index: 5;
+  animation: nav-appearance 0.4s ease-in;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: relative;
+    min-width: 436px;
+    animation: none;
+  }
+
+  @media (min-width: $desctop) {
+    background-color: transparent;
+  }
+}
+
+.main-nav--active {
+  display: block;
+}
+
+.main-nav--nojs.main-nav {
+  display: block;
+}
+
 .main-nav__list {
   margin: 0;
-}
-
-.main-nav__burger {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 4px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $basic-dark;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 4px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $basic-dark;
-  }
-}
-
-.main-nav__burger-span {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 2px;
-  background-color: $basic-dark;
 }
