@@ -1,0 +1,1 @@
+var t=document.querySelector(".main-nav"),e=document.querySelector(".burger");t.classList.remove("main-nav--nojs");e.addEventListener("click",()=>{e.classList.toggle("burger--active"),t.classList.toggle("main-nav--active")});
