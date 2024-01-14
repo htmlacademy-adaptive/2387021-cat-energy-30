@@ -93,8 +93,8 @@
 
 .option-list__item--weight-gain::after {
   top: 35px;
-  left: 13px;
-  width: 67px;
+  left: 10px;
+  width: 72px;
   height: 28px;
   background-image: url("../../images/icons/stack.svg#cat-pro");
   background-position: center;
@@ -109,9 +109,9 @@
 
   @media (min-width: $desctop) {
     top: 67px;
-    left: 33px;
+    left: 27px;
     right: auto;
-    width: 134px;
+    width: 148px;
     height: 56px;
   }
 }

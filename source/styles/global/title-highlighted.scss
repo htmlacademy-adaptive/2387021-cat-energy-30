@@ -7,12 +7,19 @@
     position: absolute;
     content: "";
     top: 50%;
-    right: calc(100% + 20px);
     width: 100vw;
     height: 2px;
     background-color: $basic-green;
 
-    @media (min-width: $desctop) {
+    @media (min-width: $tablet) {
+      top: 55%;
+    }
+  }
+
+  &::before {
+    right: calc(100% + 20px);
+
+    @media (min-width: $tablet) {
       right: calc(100% + 40px);
     }
   }
@@ -20,7 +27,7 @@
   &::after {
     left: calc(100% + 20px);
 
-    @media (min-width: $desctop) {
+    @media (min-width: $tablet) {
       left: calc(100% + 40px);
     }
   }

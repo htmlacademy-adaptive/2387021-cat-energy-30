@@ -24,10 +24,11 @@
 }
 
 .card picture {
-  @include flex;
+  @include flex(start, center);
 
   @media (min-width: $tablet) {
     height: 210px;
+    margin-bottom: 3px;
   }
 }
 
@@ -46,7 +47,11 @@
     font-size: 20px;
     line-height: 24px;
     min-width: 135px;
-    margin: 0 auto 20px;
+    margin: 0 auto 22px;
+  }
+
+  @media (min-width: $desctop) {
+    margin: -10px auto 25px;
   }
 }
 
@@ -57,7 +62,7 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    gap: 10px;
+    gap: 12px;
     margin: 0 0 37px 0;
   }
 }
@@ -99,6 +104,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.card__item:nth-child(3) .card__item-desc {
+  margin-right: 3px;
 }
 
 .card--more {
@@ -147,9 +156,31 @@
 .card__desc-more {
   margin: 0 0 21px 0;
 
+  br {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet) {
     margin: 0 0 82px 0;
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+.card__image {
+  margin: 10px 0 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 5px 0;
+  }
+}
+
+.card__image--big {
+  margin-top: 3px;
+
+  @media (min-width: $tablet) {
+    margin-top: -16px;
   }
 }

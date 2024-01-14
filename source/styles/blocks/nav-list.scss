@@ -43,13 +43,17 @@
     position: absolute;
     content: "";
     left: 0;
-    top: 52px;
+    top: 50px;
     width: 100%;
     height: 2px;
     background-color: $basic-green;
 
     @media (max-width: 767px) {
       display: none;
+    }
+
+    @media (min-width: $desctop) {
+      top: 54px;
     }
   }
 }
