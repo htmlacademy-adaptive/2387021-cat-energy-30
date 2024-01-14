@@ -6,7 +6,7 @@
     content: "";
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
     width: 57px;
     height: 53px;
     background-color: transparent;
@@ -18,10 +18,12 @@
       background-image: url("../../images/map-pin-tab@1x.png");
       width: 113px;
       height: 106px;
+      transform: translate(-45%, -55%);
     }
 
     @media (min-width: $desctop) {
       left: 67%;
+      transform: translate(-45%, -65%);
     }
   }
 }
@@ -30,8 +32,8 @@
   border: none;
   display: block;
   width: 100%;
-}
 
-// .map__image-reserve {
-//   display: block;
-// }
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+}

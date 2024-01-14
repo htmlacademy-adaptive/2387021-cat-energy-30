@@ -14,6 +14,7 @@
   @media (min-width: $desctop) {
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
+    gap: 37px 80px;
   }
 }
 
@@ -35,6 +36,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet) {
+      top: 40px;
       width: 80px;
       height: 80px;
     }
@@ -70,6 +72,10 @@
   background-size: 30px 32px;
 }
 
+.plus-list__item--healthy::after {
+  right: 22px;
+}
+
 .plus-list__item--powder::before {
   background-image: url("../../images/icons/stack.svg#icon-powder");
   background-size: 26px 29px;
@@ -90,6 +96,13 @@
   padding: 0 0 0 80px;
 
   @media (min-width: $tablet) {
+    font-size: 16px;
     padding: 151px 0 10px 0;
+  }
+
+  @media (max-width: 1439px) {
+    br {
+      display: none;
+    }
   }
 }

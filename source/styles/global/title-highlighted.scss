@@ -1,18 +1,27 @@
-// .title-highlighted {
-//   position: relative;
+.title-highlighted {
+  position: relative;
+  width: fit-content;
 
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     top: 50%;
-//     left: 246px;
-//     transform: translateY(-50%);
-//     width: 100%;
-//     height: 2px;
-//     background-color: $basic-green;
-//   }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: calc(100% + 20px);
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
 
-//   &::before {
-//     // right: 20px;
-//   }
-// }
+    @media (min-width: $desctop) {
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    left: calc(100% + 20px);
+
+    @media (min-width: $desctop) {
+      left: calc(100% + 40px);
+    }
+  }
+}

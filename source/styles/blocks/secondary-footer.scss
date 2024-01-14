@@ -25,3 +25,23 @@
   display: flex;
   justify-content: center;
 }
+
+.secondary-footer__copyright {
+  margin-top: -3px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
+}
+
+.secondary-footer__social {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-bottom: -9px;
+  }
+}

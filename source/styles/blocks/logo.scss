@@ -1,3 +1,15 @@
 .logo {
   display: block;
+  margin-right: 20%;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+  }
+}
+
+.logo__image--text {
+  @media (min-width: $desctop) {
+    width: 118px;
+    height: 21px;
+  }
 }
