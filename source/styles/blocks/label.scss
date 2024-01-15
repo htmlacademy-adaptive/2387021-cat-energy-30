@@ -46,12 +46,21 @@
   height: 13px;
   background-color: $basic-green;
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__input[type="checkbox"]:checked + .label__mark {
-  background-image: url("../../images/icons/tick.svg");
+  background-image: url("../../images/icons/stack.svg#tick");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    background-image: url("../../images/icons/stack.svg#tick-tablet");
+  }
 }
