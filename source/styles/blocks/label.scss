@@ -8,6 +8,10 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &:hover .label__mark {
+    outline: 1px solid #bababa;
+  }
+
   @media (min-width: $tablet) {
     gap: 20px;
     font-size: 20px;
@@ -63,4 +67,12 @@
   @media (min-width: $tablet) {
     background-image: url("../../images/icons/stack.svg#tick-tablet");
   }
+}
+
+.label__span {
+  color: #222222;
+}
+
+.label__span--checkbox {
+  color: #000000;
 }

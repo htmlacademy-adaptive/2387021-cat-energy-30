@@ -12,12 +12,6 @@
   }
 }
 
-// .main-header--index .nav-list {
-//   @media (min-width: $tablet) {
-//     margin-right: 3px;
-//   }
-// }
-
 .nav-list__item {
   position: relative;
   list-style: none;
@@ -78,6 +72,15 @@
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -87,6 +90,13 @@
   @media (min-width: $desctop) {
     font-size: 20px;
     line-height: normal;
+  }
+}
+
+.nav-list__item--current .nav-list__link {
+  &:hover,
+  &:active {
+    opacity: 1;
   }
 }
 

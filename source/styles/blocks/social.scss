@@ -35,3 +35,21 @@
 .social__item {
   list-style: none;
 }
+
+.social__logo path {
+  transition: all 0.2s ease;
+}
+
+.social__link:hover .social__logo path,
+.social__link:focus .social__logo path, {
+  fill: $basic-green;
+}
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:active .social__logo path {
+  fill: $basic-green;
+  opacity: 0.3;
+}

@@ -24,6 +24,15 @@
 .secondary-footer__logo {
   display: flex;
   justify-content: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .secondary-footer__copyright {

@@ -44,13 +44,13 @@
   flex-direction: column;
   gap: 14px;
   margin: 0;
-  padding: 1px 20px 22px;
+  padding: 2px 20px 21px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
     gap: 20px;
     border: none;
-    padding: 1px 70px 71px;
+    padding: 2px 70px 70px;
   }
 }
 
@@ -139,12 +139,20 @@
 
 .form__item--email::before {
   mask-image: url("../../images/icons/stack.svg#icon-email");
-  background-color: $basic-dark;
+  background-color: #222222;
+}
+
+.form__item--email:has(.input:focus)::before {
+  background-color: $basic-green;
 }
 
 .form__item--tel::before {
   mask-image: url("../../images/icons/stack.svg#icon-phone");
-  background-color: $basic-dark;
+  background-color: #222222;
+}
+
+.form__item--tel:has(.input:focus)::before {
+  background-color: $basic-green;
 }
 
 .form__list--radio .form__item {
@@ -208,6 +216,17 @@
   @media (min-width: $tablet) {
     text-align: start;
     margin: 0 0 3px -3px;
+  }
+}
+
+.form__input {
+  &:disabled + .label__mark {
+    outline: 1px solid #bababa;
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .label__span {
+    opacity: 0.3;
   }
 }
 

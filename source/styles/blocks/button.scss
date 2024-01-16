@@ -10,9 +10,28 @@
   cursor: pointer;
   text-decoration: none;
   border: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {
   background-color: $basic-grey;
   color: $text-color;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: $text-color;
+    background-color: #ebebeb;
+  }
 }
