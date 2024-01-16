@@ -24,4 +24,33 @@
 .secondary-footer__logo {
   display: flex;
   justify-content: center;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.secondary-footer__copyright {
+  margin-top: -3px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
+}
+
+.secondary-footer__social {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-bottom: -9px;
+  }
 }

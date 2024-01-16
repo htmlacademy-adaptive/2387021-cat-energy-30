@@ -3,7 +3,7 @@
   color: $basic-dark;
 
   @media (min-width: $tablet) {
-    padding: 25px 0;
+    padding: 20px 0 25px;
   }
 
   @media (min-width: $desctop) {
@@ -21,9 +21,8 @@
 
 .main-header__wrapper {
   position: relative;
-  // max-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 13px 21px 11px 20px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -40,14 +39,17 @@
 .main-header__top-content {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  min-height: 65px;
   background-color: $basic-white;
   z-index: 6;
 
   @media (min-width: $tablet) {
     justify-content: flex-start;
     gap: 13px;
+  }
+
+  @media (min-width: $desctop) {
+    justify-content: flex-start;
+    gap: 14px;
   }
 }

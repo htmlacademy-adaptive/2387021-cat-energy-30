@@ -1,4 +1,6 @@
 .copyright {
+  transition: all 0.2s ease;
+
   @include flex(center, space-between);
   text-decoration: none;
 
@@ -12,4 +14,21 @@
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
+}
+
+.copyright__logo path {
+  transition: all 0.2s ease;
+}
+
+.copyright:hover .copyright__logo path,
+.copyright:focus .copyright__logo path {
+  fill: $basic-green;
+}
+
+.copyright:focus {
+  outline: none;
+}
+
+.copyright:active {
+  opacity: 0.3;
 }

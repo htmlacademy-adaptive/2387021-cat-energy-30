@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   gap: 32px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet) {
     justify-content: flex-start;
@@ -14,7 +14,7 @@
   @media (min-width: $desctop) {
     justify-content: flex-start;
     gap: 42px;
-    margin-bottom: 32px;
+    margin-bottom: 49px;
   }
 }
 
@@ -32,7 +32,7 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  padding: 15px 15px 18px;
+  padding: 15px;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
 
@@ -58,9 +58,21 @@
     background-color: $basic-white;
     font-size: 14px;
     line-height: 14px;
+    width: 112px;
+    padding: 0 8px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desctop) {
     background-color: $basic-grey;
+  }
+}
+
+.result-list__item:nth-child(2) .result-list__desc {
+  @media (min-width: $tablet) {
+    width: 141px;
   }
 }

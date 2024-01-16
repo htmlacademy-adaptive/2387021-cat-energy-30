@@ -8,6 +8,10 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &:hover .label__mark {
+    outline: 1px solid #bababa;
+  }
+
   @media (min-width: $tablet) {
     gap: 20px;
     font-size: 20px;
@@ -46,12 +50,29 @@
   height: 13px;
   background-color: $basic-green;
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__input[type="checkbox"]:checked + .label__mark {
-  background-image: url("../../images/icons/tick.svg");
+  background-image: url("../../images/icons/stack.svg#tick");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
   transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    background-image: url("../../images/icons/stack.svg#tick-tablet");
+  }
+}
+
+.label__span {
+  color: #222222;
+}
+
+.label__span--checkbox {
+  color: #000000;
 }

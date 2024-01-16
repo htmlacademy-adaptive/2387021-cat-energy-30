@@ -2,7 +2,6 @@
   position: relative;
   height: 256px;
   width: 280px;
-  margin: 0 auto;
 
   @media (min-width: $tablet) {
     width: 560px;
@@ -16,17 +15,30 @@
 }
 
 .slider__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .slider__item {
-  position: absolute;
   top: 0;
   left: 0;
+  width: 140px;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet) {
+    width: 280px;
+  }
 }
 
 .slider__item--after {
   z-index: 3;
+  display: flex;
+  justify-content: end;
+}
+
+.slider__image {
+  max-width: none;
 }

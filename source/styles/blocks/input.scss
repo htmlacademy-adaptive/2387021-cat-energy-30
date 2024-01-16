@@ -8,6 +8,7 @@
   text-transform: uppercase;
   outline: 1px solid #e7e7e7;
   border: none;
+  transition: all 0.2s ease;
 
   &::placeholder {
     color: $text-color;
@@ -16,13 +17,22 @@
     line-height: 18px;
     text-transform: uppercase;
 
-    @media (min-height: $tablet) {
+    @media (min-width: $tablet) {
       font-size: 20px;
       line-height: normal;
     }
   }
 
-  @media (min-height: $tablet) {
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid #444444;
+  }
+
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: normal;
     padding: 11px 36px 11px 20px;
