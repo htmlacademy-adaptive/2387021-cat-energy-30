@@ -170,7 +170,7 @@
 }
 
 .card__image {
-  margin: 10px 0 0 0;
+  margin: 12px 0 0 0;
 
   @media (min-width: $tablet) {
     margin: 0 0 5px 0;
@@ -182,5 +182,9 @@
 
   @media (min-width: $tablet) {
     margin-top: -16px;
+  }
+
+  @media (min-width: $desctop) {
+    margin-top: -12px;
   }
 }
