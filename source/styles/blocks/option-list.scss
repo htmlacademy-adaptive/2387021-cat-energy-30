@@ -208,3 +208,16 @@
     font-size: 20px;
   }
 }
+
+.option-list__button--disabled {
+  opacity: 0.2;
+  cursor: default;
+
+  &::before {
+    background-position: 0;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

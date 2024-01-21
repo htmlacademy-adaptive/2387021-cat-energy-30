@@ -35,3 +35,16 @@
     background-color: #ebebeb;
   }
 }
+
+.button--disabled {
+  opacity: 0.2;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.2;
+    cursor: default;
+    outline: none;
+  }
+}

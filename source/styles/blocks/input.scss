@@ -9,6 +9,7 @@
   outline: 1px solid #e7e7e7;
   border: none;
   transition: all 0.2s ease;
+  appearance: textfield;
 
   &::placeholder {
     color: $text-color;

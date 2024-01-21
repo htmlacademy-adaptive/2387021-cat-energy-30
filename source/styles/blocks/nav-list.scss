@@ -93,6 +93,19 @@
   }
 }
 
+.nav-list__link--disabled {
+  opacity: 0.2;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.2;
+    cursor: default;
+    outline: none;
+  }
+}
+
 .nav-list__item--current .nav-list__link {
   &:hover,
   &:active {
