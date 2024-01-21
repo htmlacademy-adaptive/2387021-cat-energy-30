@@ -130,6 +130,20 @@
     background-color: $basic-green;
     opacity: 0.6;
   }
+
+  &:has(.example__button--disabled)::after {
+    background-color: #666666;
+    opacity: 0.2;
+  }
+
+  &:has(.example__button--disabled:hover)::after {
+    background-color: #666666;
+  }
+
+  &:has(.example__button--disabled:active)::after {
+    background-color: #666666;
+    opacity: 0.2;
+  }
 }
 
 .example__button {
@@ -173,6 +187,23 @@
 
   &:hover::before {
     background-color: $basic-green;
+  }
+}
+
+.example__button--disabled {
+  opacity: 0.2;
+  cursor: default;
+
+  &:hover,
+  &:active {
+    border: 2px solid #666666;
+    opacity: 0.2;
+  }
+
+  &:hover::before,
+  &:active::before {
+    background-color: #666666;
+    opacity: 0.2;
   }
 }
 

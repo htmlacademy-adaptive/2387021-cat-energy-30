@@ -37,3 +37,11 @@
     height: 400px;
   }
 }
+
+.map__image-reserve {
+  display: none;
+}
+
+.map__image-reserve--nojs.map__image-reserve {
+  display: block;
+}

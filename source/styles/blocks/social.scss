@@ -41,7 +41,7 @@
 }
 
 .social__link:hover .social__logo path,
-.social__link:focus .social__logo path, {
+.social__link:focus .social__logo path {
   fill: $basic-green;
 }
 
@@ -52,4 +52,19 @@
 .social__link:active .social__logo path {
   fill: $basic-green;
   opacity: 0.3;
+}
+
+.social__link--disabled {
+  opacity: 0.2;
+  cursor: default;
+
+  &:hover,
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.social__link--disabled:hover .social__logo path,
+.social__link--disabled:active .social__logo path {
+  fill: #666666;
 }
