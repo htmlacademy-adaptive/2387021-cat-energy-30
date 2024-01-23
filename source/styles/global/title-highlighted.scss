@@ -4,6 +4,7 @@
 
   &::before,
   &::after {
+    display: block;
     position: absolute;
     content: "";
     top: 50%;

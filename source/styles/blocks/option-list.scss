@@ -157,11 +157,13 @@
   @media (min-width: $tablet) {
     color: $basic-dark;
     margin: 0 0 52px 0;
+    font-size: 16px;
   }
 
   @media (min-width: $desctop) {
     color: $basic-dark;
     margin: 0 0 27px 0;
+    font-size: 16px;
   }
 }
 
@@ -173,7 +175,7 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 4px 47px 4px 0;
+  padding: 4px 50px 4px 0;
   transition: all 0.3s ease;
 
   &::before {

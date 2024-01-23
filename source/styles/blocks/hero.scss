@@ -18,7 +18,7 @@
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 29%, $basic-white 29% 100%);
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 28.8%, $basic-white 28.8% 100%);
   padding: 0 20px;
   margin: 0 auto;
 
@@ -99,6 +99,7 @@
   @media (min-width: $desctop) {
     margin: 0 0 52px 0;
     padding: 0 0 0 80px;
+    max-width: 580px;
   }
 }
 

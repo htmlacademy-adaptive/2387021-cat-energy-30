@@ -51,7 +51,7 @@
   margin: 0;
   position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -42%);
   background-color: $dark-grey;
 
   @media (min-width: $tablet) {
@@ -60,6 +60,7 @@
     line-height: 14px;
     width: 112px;
     padding: 0 8px;
+    transform: translate(-50%, -50%);
 
     br {
       display: none;

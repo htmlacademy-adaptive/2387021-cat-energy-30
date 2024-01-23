@@ -29,7 +29,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    top: 0;
+    top: -1px;
     left: 0;
     background-color: $basic-green;
     background-position: center;
@@ -101,6 +101,8 @@
   }
 
   @media (max-width: 1439px) {
+    font-size: 16px;
+
     br {
       display: none;
     }
