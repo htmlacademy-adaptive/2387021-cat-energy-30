@@ -1,4 +1,3 @@
-
 .burger {
   position: relative;
   width: 24px;
@@ -7,7 +6,7 @@
   background: transparent;
   cursor: pointer;
   overflow: hidden;
-  margin: -5px 0 0 auto;
+  margin: -5px 0 0 0;
 
   &::before {
     position: absolute;

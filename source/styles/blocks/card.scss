@@ -19,6 +19,22 @@
   }
 }
 
+.card__link {
+  text-decoration: none;
+
+  &:focus {
+    outline-offset: 0;
+
+    @media (min-width: $tablet) {
+      outline-offset: 48px;
+    }
+
+    @media (min-width: $desctop) {
+      outline-offset: 40px;
+    }
+  }
+}
+
 .card:last-child {
   border-bottom: 1px solid #ebebeb;
 }

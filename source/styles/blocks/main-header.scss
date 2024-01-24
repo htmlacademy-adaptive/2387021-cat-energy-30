@@ -39,6 +39,7 @@
 .main-header__top-content {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: $basic-white;
   z-index: 6;
@@ -51,5 +52,13 @@
   @media (min-width: $desctop) {
     justify-content: flex-start;
     gap: 14px;
+  }
+}
+
+.main-header__logo--text {
+  margin-left: -8px;
+
+  @media (min-width: $tablet) {
+    margin-left: 0;
   }
 }
