@@ -11,5 +11,4 @@ navButton.addEventListener('click', () => {
 });
 
 const map = document.querySelector('.map__image-reserve');
-
 map.classList.remove('map__image-reserve--nojs');
