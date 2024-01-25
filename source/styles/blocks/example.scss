@@ -2,20 +2,20 @@
   background: $dark-grey;
 
   @media (min-width: $tablet) {
-    background: linear-gradient($basic-white 57.5%, $dark-grey 57.5% 100%);
+    background: linear-gradient($basic-white 57%, $dark-grey 57% 100%);
   }
 
   @media (min-width: $desctop) {
-    background: linear-gradient($basic-white 28%, $basic-grey 28% 100%);
+    background: linear-gradient($basic-white 31%, $basic-grey 31% 100%);
   }
 }
 
 .example__wrapper {
-  padding: 25px 20px 40px;
+  padding: 23px 20px 40px;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    padding: 45px 30px 101px;
+    padding: 45px 30px 95px;
   }
 
   @media (min-width: $desctop) {
@@ -85,6 +85,7 @@
     text-align: right;
     font-size: 20px;
     line-height: 20px;
+    margin: -2px 0 20px 0;
   }
 
   @media (min-width: $desctop) {

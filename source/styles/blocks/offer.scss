@@ -1,7 +1,7 @@
 .offer {
   position: relative;
   color: $basic-white;
-  background-image: url("../../images/catalog/catalog-bg-mob@2x.webp");
+  background-image: url("../../images/catalog/catalog-bg-mob@1x.webp");
   background-size: cover;
   text-align: center;
   font-size: 16px;
@@ -30,14 +30,26 @@
     }
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/catalog/catalog-bg-mob@2x.webp");
+  }
+
   @media (min-width: $tablet) {
+    background-image: url("../../images/catalog/catalog-bg-tab@1x.webp");
+  }
+
+  @media (min-width: $tablet) and (min-resolution: 2dppx) {
     background-image: url("../../images/catalog/catalog-bg-tab@2x.webp");
   }
 
   @media (min-width: $desctop) {
-    background-image: url("../../images/catalog/catalog-bg-desc@2x.webp");
+    background-image: url("../../images/catalog/catalog-bg-desc@1x.webp");
     height: 288px;
     width: 245px;
+  }
+
+  @media (min-width: $desctop) and (min-resolution: 2dppx) {
+    background-image: url("../../images/catalog/catalog-bg-desc@2x.webp");
   }
 }
 

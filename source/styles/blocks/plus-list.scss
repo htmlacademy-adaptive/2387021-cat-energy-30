@@ -29,7 +29,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    top: 0;
+    top: -1px;
     left: 0;
     background-color: $basic-green;
     background-position: center;
@@ -95,14 +95,16 @@
   margin: 0;
   padding: 0 0 0 80px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     font-size: 16px;
     padding: 151px 0 10px 0;
-  }
 
-  @media (max-width: 1439px) {
     br {
-      display: none;
+      display: block;
     }
   }
 }

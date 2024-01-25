@@ -1,10 +1,13 @@
 .input {
-  padding: 14px 36px 13px 15px;
+  display: flex;
+  flex-grow: 1;
+  padding: 14px 17px 13px 15px;
   color: $text-color;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   min-height: 45px;
+  width: 150px;
   text-transform: uppercase;
   outline: 1px solid #e7e7e7;
   border: none;
@@ -36,11 +39,25 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: normal;
-    padding: 11px 36px 11px 20px;
+    padding: 11px 17px 11px 20px;
   }
 }
 
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
   appearance: none;
+}
+
+.form__item--email .input,
+.form__item--tel .input {
+  padding: 14px 36px 13px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 11px 36px 11px 20px;
+  }
+}
+
+//Класс "input--error" для отображения ошибки
+.input--error.input {
+  outline: 2px solid #ff8282;
 }

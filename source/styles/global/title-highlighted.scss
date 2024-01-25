@@ -4,15 +4,16 @@
 
   &::before,
   &::after {
+    display: block;
     position: absolute;
     content: "";
-    top: 50%;
+    top: 16px;
     width: 100vw;
     height: 2px;
     background-color: $basic-green;
 
     @media (min-width: $tablet) {
-      top: 55%;
+      top: 22px;
     }
   }
 

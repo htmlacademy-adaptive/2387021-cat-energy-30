@@ -18,7 +18,7 @@
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 29%, $basic-white 29% 100%);
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 28.8%, $basic-white 28.8% 100%);
   padding: 0 20px;
   margin: 0 auto;
 
@@ -50,12 +50,18 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url("../../images/index/hero-cat-desc@2x.webp");
+      background-image: url("../../images/index/hero-cat-desc@1x.webp");
       background-repeat: no-repeat;
       background-position: left;
       background-size: cover;
       z-index: -1;
     }
+  }
+}
+
+.hero__image-bg::before {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/index/hero-cat-desc@2x.webp");
   }
 }
 
@@ -99,6 +105,7 @@
   @media (min-width: $desctop) {
     margin: 0 0 52px 0;
     padding: 0 0 0 80px;
+    max-width: 580px;
   }
 }
 
