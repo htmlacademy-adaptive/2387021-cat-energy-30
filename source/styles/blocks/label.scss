@@ -46,40 +46,6 @@
   }
 }
 
-.form__input[type="checkbox"] + .label__mark {
-  border-radius: 0;
-}
-
-.form__input[type="radio"]:checked + .label__mark::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-  background-color: $basic-green;
-  transition: all 0.3s ease;
-
-  @media (min-width: $tablet) {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-.form__input[type="checkbox"]:checked + .label__mark {
-  background-image: url("../../images/icons/stack.svg#tick");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 18px;
-  transition: all 0.3s ease;
-
-  @media (min-width: $tablet) {
-    background-image: url("../../images/icons/stack.svg#tick-tablet");
-  }
-}
-
 .label__span {
   color: #222222;
 }

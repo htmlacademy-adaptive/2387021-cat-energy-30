@@ -58,7 +58,7 @@
   }
 }
 
-.main-header--index .nav-list__item--current::before {
+.nav-list__item--index.nav-list__item--current::before {
   @media (min-width: $desctop) {
     background-color: $basic-white;
   }
@@ -114,7 +114,7 @@
   }
 }
 
-.main-header--index .nav-list__link {
+.nav-list__item--index .nav-list__link {
   @media (min-width: $desctop) {
     color: $basic-white;
   }

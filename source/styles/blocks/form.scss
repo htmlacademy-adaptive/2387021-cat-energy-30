@@ -19,7 +19,7 @@
   }
 }
 
-.form__field-wrapper .form__list.form__list--radio {
+.form__list--padding.form__list {
   @media (min-width: $desctop) {
     padding: 25px 25px 25px 28px;
     margin: 0;
@@ -176,6 +176,41 @@
   gap: 15px;
 }
 
+.form__input[type="checkbox"] + .form__mark {
+  border-radius: 0;
+}
+
+.form__input[type="radio"]:checked + .form__mark::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.form__input[type="checkbox"]:checked + .form__mark {
+  background-image: url("../../images/icons/stack.svg#tick");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  transition: all 0.3s ease;
+
+  @media (min-width: $tablet) {
+    background-image: url("../../images/icons/stack.svg#tick-tablet");
+  }
+}
+
+
 .form__legend {
   color: $basic-dark;
   font-family: $secondary-font;
@@ -246,17 +281,17 @@
 }
 
 .form__input {
-  &:disabled + .label__mark {
+  &:disabled + .form__mark {
     outline: 1px solid #bababa;
     opacity: 0.3;
   }
 
-  &:disabled ~ .label__span {
+  &:disabled ~ .form__span {
     opacity: 0.3;
   }
 }
 
-.form__input.textarea {
+.form__input--textarea {
   margin: 0 0 19px;
 
   @media (min-width: $tablet) {

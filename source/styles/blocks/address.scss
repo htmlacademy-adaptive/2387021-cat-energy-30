@@ -23,7 +23,7 @@
   }
 }
 
-.page__body--catalog .address {
+.address--catalog.address {
   padding: 25px 20px;
 
   @media (min-width: $tablet) {
@@ -35,7 +35,7 @@
   }
 }
 
-.page__body--form .address {
+.address--form.address {
   padding: 27px 20px 25px;
 
   @media (min-width: $tablet) {

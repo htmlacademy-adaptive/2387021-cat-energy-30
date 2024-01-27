@@ -48,8 +48,8 @@
   appearance: none;
 }
 
-.form__item--email .input,
-.form__item--tel .input {
+.input--email,
+.input--tel {
   padding: 14px 36px 13px 15px;
 
   @media (min-width: $tablet) {
